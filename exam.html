@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilot Exam</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .h{
+          
+           position:fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+           display:none;
+            
+            background-color:rgba(23,12,11,0.9);
+            width:400px;
+            
+            height:100px;
+            margin-left:30%;
+            margin-top:20px;
+            border-radius:20px;
+             
+            
+
+        }
+        .hh{
+            display:none;
+           position:fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color:rgba(23,12,11,0.1);
+            width:300px;
+            backdrop-filter:blur(5px);
+            height:100px;
+            margin-left:34%;
+            margin-top:20px;
+            border-radius:20px;
+           
+          
+            
+
+        }
+       .two ,.three, .four,.five,.six,.seven,.eight,.nine,.ten{
+            display:none;
+        }
+    </style>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	
+    <script src="jquery-3.7.1.js"></script>
+</head>
+<body>
+<div class="one">
+<div class="container">
+    <h1>Pilot Exam</h1>
+    <form id="examForm">
+        
+        <div class="question" id="question1">
+            <h2>Question 1: What does ATC stand for?</h2>
+            <div class="options">
+                <label><input type="radio" name="q1" value="a"> a) Air Traffic Communication</label>
+                <label><input type="radio" name="q1" value="b"> b) Air Traffic Control</label>
+                <label><input type="radio" name="q1" value="c"> c) Aircraft Transport Company</label>
+                <label><input type="radio" name="q1" value="d"> d) Aviation Transport Coordinator</label>
+            </div>
+        </div>
+        
+        <div class="question" id="question2">
+            <h2>Question 2: What is the purpose of a pre-flight inspection?</h2>
+            <div class="options">
+                <label><input type="radio" name="q2" value="a"> a) To check weather conditions</label>
+                <label><input type="radio" name="q2" value="b"> b) To inspect the aircraft for airworthiness</label>
+                <label><input type="radio" name="q2" value="c"> c) To evaluate the pilot's performance</label>
+                <label><input type="radio" name="q2" value="d"> d) To plan the route of flight</label>
+            </div>
+        </div>
+        <div class="h">
+           <p style="color:white" class="ms-3 mt-4 text-info lead"> Your Response has been Submitted . Click  <a href="firstpage.html">here </a> to go back</p>
+          
+         
+          
+                
+            </div>
+
+            <div class="hh">
+                <p> Submitting the response..... Click <a href="firstpage.html">here </a>to go back</p>
+                
+                
+                     
+                 </div>
+
+        
+        <div class="question" id="question3">
+            <h2>Question 3: What is the standard emergency frequency used by pilots?</h2>
+            <div class="options">
+                <label><input type="radio" name="q3" value="a"> a) 122.8 MHz</label>
+                <label><input type="radio" name="q3" value="b"> b) 121.5 MHz</label>
+                <label><input type="radio" name="q3" value="c"> c) 118.1 MHz</label>
+                <label><input type="radio" name="q3" value="d"> d) 119.9 MHz</label>
+            </div>
+        </div>
+    </form>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="two">
+    <div class="container">
+      
+        <form id="examForm">
+            
+            <div class="question" id="question4">
+                <h2>Question 4: Which of the following is NOT a primary flight control surface?</h2>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="a"> a) Rudder</label>
+                    <label><input type="radio" name="q4" value="b"> b) Elevator</label>
+                    <label><input type="radio" name="q4" value="c"> c) Spoiler</label>
+                    <label><input type="radio" name="q4" value="d"> d) Aileron</label>
+                </div>
+            </div>
+    
+           
+            <div class="question" id="question5">
+                <h2>Question 5: What does VFR stand for?</h2>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="a"> a) Visual Flight Regulations</label>
+                    <label><input type="radio" name="q5" value="b"> b) Very Fast Rotation</label>
+                    <label><input type="radio" name="q5" value="c"> c) Visual Flight Rules</label>
+                    <label><input type="radio" name="q5" value="d"> d) Velocity Flight Route</label>
+                </div>
+            </div>
+            <div class="h">
+                <p style="color:white" class="ms-3 mt-4 text-info lead"> Your Response has been Submitted . Click  <a href="firstpage.html">here </a> to go back</p>
+               
+              
+               
+                     
+                 </div>
+            
+         
+            <div class="question" id="question6">
+                <h2>Question 6: What is the primary purpose of a control tower?</h2>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="a"> a) To guide aircraft during taxiing</label>
+                    <label><input type="radio" name="q6" value="b"> b) To provide weather updates to pilots</label>
+                    <label><input type="radio" name="q6" value="c"> c) To monitor and control air traffic</label>
+                    <label><input type="radio" name="q6" value="d"> d) To refuel aircraft</label>
+                </div>
+            </div>
+    
+    
+         </form>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="three">
+        <div class="container">
+          
+            <form id="examForm">
+                
+                <div class="question" id="question7">
+                    <h2>Question 7: What is indicated by the "M" in METAR?</h2>
+                    <div class="options">
+                        <label><input type="radio" name="q7" value="a"> a) Marine</label>
+                        <label><input type="radio" name="q7" value="b"> b) Meteorological</label>
+                        <label><input type="radio" name="q7" value="c"> c) Mountainous</label>
+                        <label><input type="radio" name="q7" value="d"> d) Magnetic</label>
+                    </div>
+                </div>
+                
+                
+                <div class="question" id="question8">
+                    <h2>Question 8: Which instrument measures aircraft altitude?</h2>
+                    <div class="options">
+                        <label><input type="radio" name="q8" value="a"> a) Airspeed Indicator</label>
+                        <label><input type="radio" name="q8" value="b"> b) Altimeter</label>
+                        <label><input type="radio" name="q8" value="c"> c) Vertical Speed Indicator</label>
+                        <label><input type="radio" name="q8" value="d"> d) Turn Coordinator</label>
+                    </div>
+                </div>
+                <div class="h">
+                    <p style="color:white" class="ms-3 mt-4 text-info lead"> Submitting your response. Click  <a href="firstpage.html">here </a> to go back</p>
+                   
+                  
+                   
+                         
+                     </div>
+        
+               
+                <div class="question" id="question9">
+                    <h2>Question 9: What is the primary function of flaps during landing?</h2>
+                    <div class="options">
+                        <label><input type="radio" name="q9" value="a"> a) To increase lift</label>
+                        <label><input type="radio" name="q9" value="b"> b) To decrease lift</label>
+                        <label><input type="radio" name="q9" value="c"> c) To increase drag</label>
+                        <label><input type="radio" name="q9" value="d"> d) To decrease drag</label>
+                    </div>
+                </div>
+                
+                
+              
+        
+            </form>
+        </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="four">
+            <div class="container">
+              
+                <form id="examForm">
+                    
+                    <div class="question" id="question10">
+                        <h2>Question 10: Which of the following is NOT a type of airspace?</h2>
+                        <div class="options">
+                            <label><input type="radio" name="q10" value="a"> a) Controlled airspace</label>
+                            <label><input type="radio" name="q10" value="b"> b) Restricted airspace</label>
+                            <label><input type="radio" name="q10" value="c"> c) Uncontrolled airspace</label>
+                            <label><input type="radio" name="q10" value="d"> d) Military airspace</label>
+                        </div>
+                    </div>
+            
+                   
+                    <div class="question" id="question11">
+                        <h2>Question 11: What is the meaning of "Mayday"?</h2>
+                        <div class="options">
+                            <label><input type="radio" name="q11" value="a"> a) Emergency</label>
+                            <label><input type="radio" name="q11" value="b"> b) Attention</label>
+                            <label><input type="radio" name="q11" value="c"> c) Request for weather information</label>
+                            <label><input type="radio" name="q11" value="d"> d) Routine communication</label>
+                        </div>
+                    </div>
+                    <div class="h">
+                        <p style="color:white" class="ms-3 mt-4 text-info lead"> Submitting your response. Click  <a href="firstpage.html">here </a> to go back</p>
+                       
+                      
+                       
+                             
+                         </div>
+                    
+                    
+                    <div class="question" id="question12">
+                        <h2>Question 12: What is the standard pressure setting for altimeters?</h2>
+                        <div class="options">
+                            <label><input type="radio" name="q12" value="a"> a) 29.92 inches of mercury</label>
+                            <label><input type="radio" name="q12" value="b"> b) 30.00 inches of mercury</label>
+                            <label><input type="radio" name="q12" value="c"> c) 1013 millibars</label>
+                            <label><input type="radio" name="q12" value="d"> d) 1015 millibars</label>
+                        </div>
+                    </div>
+            
+                </form>
+            </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="five">
+                <div class="container">
+                  
+                    <form id="examForm">
+                        
+                        <div class="question" id="question13">
+                            <h2>Question 13: What is the purpose of a transponder?</h2>
+                            <div class="options">
+                                <label><input type="radio" name="q13" value="a"> a) To communicate with air traffic control</label>
+                                <label><input type="radio" name="q13" value="b"> b) To measure airspeed</label>
+                                <label><input type="radio" name="q13" value="c"> c) To provide weather updates</label>
+                                <label><input type="radio" name="q13" value="d"> d) To enhance aircraft visibility on radar</label>
+                            </div>
+                        </div>
+                        
+                       
+                        <div class="question" id="question14">
+                            <h2>Question 14: What is the meaning of "Pan-Pan"?</h2>
+                            <div class="options">
+                                <label><input type="radio" name="q14" value="a"> a) Urgent</label>
+                                <label><input type="radio" name="q14" value="b"> b) Request for assistance</label>
+                                <label><input type="radio" name="q14" value="c"> c) Routine communication</label>
+                                <label><input type="radio" name="q14" value="d"> d) No radio communication</label>
+                            </div>
+                        </div>
+
+                        <div class="h">
+                            <p style="color:white" class="ms-3 mt-4 text-info lead"> Submitting your response. Click  <a href="firstpage.html">here </a> to go back</p>
+                           
+                          
+                           
+                                 
+                             </div>
+                       
+                        <div class="question" id="question15">
+                            <h2>Question 15: What does TAF stand for?</h2>
+                            <div class="options">
+                                <label><input type="radio" name="q15" value="a"> a) Terminal Aerodrome Forecast</label>
+                                <label><input type="radio" name="q15" value="b"> b) Traffic Alert and Collision Avoidance System</label>
+                                <label><input type="radio" name="q15" value="c"> c) Tower Airplane Facility</label>
+                                <label><input type="radio" name="q15" value="d"> d) Temporary Aircraft Flight</label>
+                            </div>
+                        </div>
+                
+                       
+                    </form>
+                </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="six">
+                    <div class="container">
+                      
+                        <form id="examForm">
+                            
+                            <div class="question" id="question16">
+                                <h2>Question 16: Which of the following is a type of hypoxia?</h2>
+                                <div class="options">
+                                    <label><input type="radio" name="q16" value="a"> a) Hypothermic hypoxia</label>
+                                    <label><input type="radio" name="q16" value="b"> b) Hypovolemic hypoxia</label>
+                                    <label><input type="radio" name="q16" value="c"> c) Histotoxic hypoxia</label>
+                                    <label><input type="radio" name="q16" value="d"> d) Hypoxic hypoxia</label>
+                                </div>
+                            </div>
+                    
+                           
+                            <div class="question" id="question17">
+                                <h2>Question 17: What does PAPI stand for?</h2>
+                                <div class="options">
+                                    <label><input type="radio" name="q17" value="a"> a) Precision Approach Path Indicator</label>
+                                    <label><input type="radio" name="q17" value="b"> b) Primary Aviation Position Indicator</label>
+                                    <label><input type="radio" name="q17" value="c"> c) Primary Airport Position Indicator</label>
+                                    <label><input type="radio" name="q17" value="d"> d) Precision Airport Position Indicator</label>
+                                </div>
+                            </div>
+
+                            <div class="h">
+                                <p style="color:white" class="ms-3 mt-4 text-info lead"> Submitting your response. Click  <a href="firstpage.html">here </a> to go back</p>
+                               
+                              
+                               
+                                     
+                                 </div>
+                            
+                          
+                            <div class="question" id="question18">
+                                <h2>Question 18: What is the minimum age requirement to obtain a private pilot license in the United States?</h2>
+                                <div class="options">
+                                    <label><input type="radio" name="q18" value="a"> a) 16 years old</label>
+                                    <label><input type="radio" name="q18" value="b"> b) 18 years old</label>
+                                    <label><input type="radio" name="q18" value="c"> c) 21 years old</label>
+                                    <label><input type="radio" name="q18" value="d"> d) 25 years old</label>
+                                </div>
+                            </div>
+                    
+                    
+                        </form>
+                    </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="seven">
+                        <div class="container">
+                          
+                            <form id="examForm">
+                                
+                                <div class="question" id="question19">
+                                    <h2>Question 19: What is the meaning of "Roger" in aviation communications?</h2>
+                                    <div class="options">
+                                        <label><input type="radio" name="q19" value="a"> a) Negative</label>
+                                        <label><input type="radio" name="q19" value="b"> b) Affirmative</label>
+                                        <label><input type="radio" name="q19" value="c"> c) I understand</label>
+                                        <label><input type="radio" name="q19" value="d"> d) I disagree</label>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="question" id="question20">
+                                    <h2>Question 20: What is the purpose of a VOR?</h2>
+                                    <div class="options">
+                                        <label><input type="radio" name="q20" value="a"> a) To provide weather updates</label>
+                                        <label><input type="radio" name="q20" value="b"> b) To measure airspeed</label>
+                                        <label><input type="radio" name="q20" value="c"> c) To determine aircraft position</label>
+                                        <label><input type="radio" name="q20" value="d"> d) To communicate with air traffic control</label>
+                                    </div>
+                                </div>
+                        
+                                <div class="h">
+                                    <p style="color:white" class="ms-3 mt-4 text-info lead"> Submitting your response. Click  <a href="firstpage.html">here </a> to go back</p>
+                                   
+                                  
+                                   
+                                         
+                                     </div>
+                                <div class="question" id="question21">
+                                    <h2>Question 21: What is the purpose of a carburetor heat control?</h2>
+                                    <div class="options">
+                                        <label><input type="radio" name="q21" value="a"> a) To regulate fuel flow</label>
+                                        <label><input type="radio" name="q21" value="b"> b) To prevent carburetor icing</label>
+                                        <label><input type="radio" name="q21" value="c"> c) To control engine temperature</label>
+                                        <label><input type="radio" name="q21" value="d"> d) To adjust mixture ratio</label>
+                                    </div>
+                                </div>
+                        
+                               
+                            </form>
+                        </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="eight">
+                            <div class="container">
+                              
+                                <form id="examForm">
+                                    
+                                    <div class="question" id="question22">
+                                        <h2>Question 22: What is the purpose of a magneto?</h2>
+                                        <div class="options">
+                                            <label><input type="radio" name="q22" value="a"> a) To ignite fuel-air mixture in the cylinders</label>
+                                            <label><input type="radio" name="q22" value="b"> b) To regulate engine temperature</label>
+                                            <label><input type="radio" name="q22" value="c"> c) To provide electrical power to the aircraft</label>
+                                            <label><input type="radio" name="q22" value="d"> d) To control propeller speed</label>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="question" id="question23">
+                                        <h2>Question 23: Which instrument measures aircraft speed through the air?</h2>
+                                        <div class="options">
+                                            <label><input type="radio" name="q23" value="a"> a) Altimeter</label>
+                                            <label><input type="radio" name="q23" value="b"> b) Airspeed Indicator</label>
+                                            <label><input type="radio" name="q23" value="c"> c) Vertical Speed Indicator</label>
+                                            <label><input type="radio" name="q23" value="d"> d) Turn Coordinator</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="h">
+                                        <p style="color:white" class="ms-3 mt-4 text-info lead"> Submitting your response. Click  <a href="firstpage.html">here </a> to go back</p>
+                                       
+                                      
+                                       
+                                             
+                                         </div>
+                            
+                                   
+                                    <div class="question" id="question24">
+                                        <h2>Question 24: What is the purpose of a stall warning system?</h2>
+                                        <div class="options">
+                                            <label><input type="radio" name="q24" value="a"> a) To warn pilots of low oil pressure</label>
+                                            <label><input type="radio" name="q24" value="b"> b) To prevent engine overheating</label>
+                                            <label><input type="radio" name="q24" value="c"> c) To alert pilots of an impending stall</label>
+                                            <label><input type="radio" name="q24" value="d"> d) To indicate fuel exhaustion</label>
+                                        </div>
+                                    </div>
+                            
+                            
+                                </form>
+                            </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <div class="nine">
+                                <div class="container">
+                                  
+                                    <form id="examForm">
+                                        
+                                        <div class="question" id="question25">
+                                            <h2>Question 25: What is the purpose of a spinner on an aircraft propeller?</h2>
+                                            <div class="options">
+                                                <label><input type="radio" name="q25" value="a"> a) To increase propeller efficiency</label>
+                                                <label><input type="radio" name="q25" value="b"> b) To reduce propeller noise</label>
+                                                <label><input type="radio" name="q25" value="c"> c) To protect the propeller hub</label>
+                                                <label><input type="radio" name="q25" value="d"> d) To provide additional lift</label>
+                                            </div>
+                                        </div>
+                                        
+                                       
+                                        <div class="question" id="question26">
+                                            <h2>Question 26: What is the purpose of a headset in aviation?</h2>
+                                            <div class="options">
+                                                <label><input type="radio" name="q26" value="a"> a) To listen to music</label>
+                                                <label><input type="radio" name="q26" value="b"> b) To communicate with air traffic control</label>
+                                                <label><input type="radio" name="q26" value="c"> c) To reduce engine noise</label>
+                                                <label><input type="radio" name="q26" value="d"> d) To enhance pilot vision</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="h">
+                                            <p style="color:white" class="ms-3 mt-4 text-info lead"> Submitting your response. Click  <a href="firstpage.html">here </a> to go back</p>
+                                           
+                                          
+                                           
+                                                 
+                                             </div>
+                                
+                                       
+                                        <div class="question" id="question27">
+                                            <h2>Question 27: What is the purpose of a glide slope indicator?</h2>
+                                            <div class="options">
+                                                <label><input type="radio" name="q27" value="a"> a) To indicate wind direction</label>
+                                                <label><input type="radio" name="q27" value="b"> b) To measure aircraft speed</label>
+                                                <label><input type="radio" name="q27" value="c"> c) To guide the aircraft during landing</label>
+                                                <label><input type="radio" name="q27" value="d"> d) To provide altitude information</label>
+                                            </div>
+                                        </div>
+                                
+                                    </form>
+                                </div>
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <div class="ten">
+                                    <div class="container">
+                                      
+                                        <form id="examForm">
+                                            
+                                            <div class="question" id="question28">
+                                                <h2>Question 28: What is the purpose of a cabin heater in an aircraft?</h2>
+                                                <div class="options">
+                                                    <label><input type="radio" name="q28" value="a"> a) To regulate cabin pressure</label>
+                                                    <label><input type="radio" name="q28" value="b"> b) To provide additional lift</label>
+                                                    <label><input type="radio" name="q28" value="c"> c) To prevent icing on the windshield</label>
+                                                    <label><input type="radio" name="q28" value="d"> d) To keep passengers warm</label>
+                                                </div>
+                                            </div>
+                                    
+                                           
+                                            <div class="question" id="question29">
+                                                <h2>Question 29: What is the purpose of a compass in an aircraft?</h2>
+                                                <div class="options">
+                                                    <label><input type="radio" name="q29" value="a"> a) To measure airspeed</label>
+                                                    <label><input type="radio" name="q29" value="b"> b) To provide altitude information</label>
+                                                    <label><input type="radio" name="q29" value="c"> c) To indicate aircraft heading</label>
+                                                    <label><input type="radio" name="q29" value="d"> d) To communicate with air traffic control</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="h">
+                                                <p style="color:white" class="ms-3 mt-4 text-info lead"> Submitting your response. Click  <a href="firstpage.html">here </a> to go back</p>
+                                               
+                                              
+                                               
+                                                     
+                                                 </div>
+                                            
+                                          
+                                            <div class="question" id="question30">
+                                                <h2>Question 30: What is the primary function of an aircraft's fuel system?</h2>
+                                                <div class="options">
+                                                    <label><input type="radio" name="q30" value="a"> a) To provide electrical power</label>
+                                                    <label><input type="radio" name="q30" value="b"> b) To regulate engine temperature</label>
+                                                    <label><input type="radio" name="q30" value="c"> c) To store and deliver fuel to the engine</label>
+                                                    <label><input type="radio" name="q30" value="d"> d) To monitor airspeed</label>
+                                                </div>
+                                            </div>
+                                    
+                                           
+                                        </form>
+                                    </div>
+                                    </div>
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+    <div class="row">
+<div class="col">
+    <button type="button" onclick="submitExam()" id="b">Submit Answers</button>
+</div>
+<div class="col">
+    <button class="btn btn-success" onclick="page(-1)"  id="pr" disabled>Prev</button>
+</div>
+<div class="col">
+    <button class="btn btn-success" onclick="page(1)" id="ne">Next</button>
+</div>
+
+    </div>
+    
+</div>
+
+
+<script>
+    var temp=1;
+    var t=0;
+    $("#b").click(function(){
+       $(".h").show(1000);
+    })
+
+    
+
+    
+    function page(n){
+         if(temp+n!=1){
+            document.getElementById("pr").disabled=false;
+         }
+         else{
+            document.getElementById("pr").disabled=true;
+         }
+
+         if(temp+n!=10){
+            document.getElementById("ne").disabled=false;
+         }
+         else{
+            document.getElementById("ne").disabled=true;
+         }
+        if(temp+n>0 && temp+n<=10){
+          temp=temp+n;
+        }
+        
+      
+      switch(temp){
+         case 1:
+            $(".one").css('display','block');
+            $(".two").css('display','none');
+            $(".three").css('display','none');
+            $(".four").css('display','none');
+            $(".five").css('display','none');
+            $(".six").css('display','none');
+            $(".seven").css('display','none');
+            $(".eight").css('display','none');
+            $(".nine").css('display','none');
+            $(".ten").css('display','none');
+           
+            break;
+        case 2:
+            $(".one").css('display','none');
+            $(".two").css('display','block');
+            $(".three").css('display','none');
+            $(".four").css('display','none');
+            $(".five").css('display','none');
+            $(".six").css('display','none');
+            $(".seven").css('display','none');
+            $(".eight").css('display','none');
+            $(".nine").css('display','none');
+            $(".ten").css('display','none');
+           
+               break;    
+        
+        case 3:
+            $(".one").css('display','none');
+            $(".two").css('display','none');
+            $(".three").css('display','block');
+            $(".four").css('display','none');
+            $(".five").css('display','none');
+            $(".six").css('display','none');
+            $(".seven").css('display','none');
+            $(".eight").css('display','none');
+            $(".nine").css('display','none');
+            $(".ten").css('display','none');
+               break;
+        
+        case 4:
+            $(".one").css('display','none');
+            $(".two").css('display','none');
+            $(".three").css('display','none');
+            $(".four").css('display','block');
+            $(".five").css('display','none');
+            $(".six").css('display','none');
+            $(".seven").css('display','none');
+            $(".eight").css('display','none');
+            $(".nine").css('display','none');
+            $(".ten").css('display','none');
+            break;
+       
+        case 5:
+            $(".one").css('display','none');
+            $(".two").css('display','none');
+            $(".three").css('display','none');
+            $(".four").css('display','none');
+            $(".five").css('display','block');
+            $(".six").css('display','none');
+            $(".seven").css('display','none');
+            $(".eight").css('display','none');
+            $(".nine").css('display','none');
+            $(".ten").css('display','none');
+            break;
+        
+
+         case 6:
+            $(".one").css('display','none');
+            $(".two").css('display','none');
+            $(".three").css('display','none');
+            $(".four").css('display','none');
+            $(".five").css('display','none');
+            $(".six").css('display','block');
+            $(".seven").css('display','none');
+            $(".eight").css('display','none');
+            $(".nine").css('display','none');
+            $(".ten").css('display','none');
+            break;
+        
+            
+        case 7:
+            $(".one").css('display','none');
+            $(".two").css('display','none');
+            $(".three").css('display','none');
+            $(".four").css('display','none');
+            $(".five").css('display','none');
+            $(".six").css('display','none');
+            $(".seven").css('display','block');
+            $(".eight").css('display','none');
+            $(".nine").css('display','none');
+            $(".ten").css('display','none');
+            break;
+
+        
+        case 8:
+            $(".one").css('display','none');
+            $(".two").css('display','none');
+            $(".three").css('display','none');
+            $(".four").css('display','none');
+            $(".five").css('display','none');
+            $(".six").css('display','none');
+            $(".seven").css('display','none');
+            $(".eight").css('display','block');
+            $(".nine").css('display','none');
+            $(".ten").css('display','none');
+            break;
+
+
+        case 9:
+            $(".one").css('display','none');
+            $(".two").css('display','none');
+            $(".three").css('display','none');
+            $(".four").css('display','none');
+            $(".five").css('display','none');
+            $(".six").css('display','none');
+            $(".seven").css('display','none');
+            $(".eight").css('display','none');
+            $(".nine").css('display','block');
+            $(".ten").css('display','none');
+            break;
+
+
+        case 10:
+            $(".one").css('display','none');
+            $(".two").css('display','none');
+            $(".three").css('display','none');
+            $(".four").css('display','none');
+            $(".five").css('display','none');
+            $(".six").css('display','none');
+            $(".seven").css('display','none');
+            $(".eight").css('display','none');
+            $(".nine").css('display','none');
+            $(".ten").css('display','block');
+            break;
+
+
+      }
+    }
+    window.onresize=function(){
+        alert("Don't  Minimize or Maximize the Screen");
+    }
+</script>
+
+</body>
+</html>
